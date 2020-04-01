@@ -216,9 +216,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Introdução ao Entity.cs" />
+    <Compile Include="IntroduçãoEnitityFramework.cs" />
     <Compile Include="LojaContext.cs" />
-    <Compile Include="PrimeirosPassos.cs" />
+    <Compile Include="PrimeiroPasso.cs" />
     <Compile Include="Produto.cs" />
     <Compile Include="ProdutoDAO.cs" />
     <Compile Include="Program.cs" />
