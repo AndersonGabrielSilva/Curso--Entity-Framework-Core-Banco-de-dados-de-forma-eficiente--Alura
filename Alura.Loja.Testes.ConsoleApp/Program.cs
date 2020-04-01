@@ -14,7 +14,19 @@ namespace Alura.Loja.Testes.ConsoleApp
             //GravarUsandoAdoNet();
             //GravarUsandoEntity();
             RecuperarProdutos();
+            Console.ReadKey();
+        }
 
+        private static void RecuperarProdutos()
+        {
+            using (var repo = new LojaContext())
+            {
+                IList<Produto> produtos = repo.Produtos.ToList();
+                foreach(var item in produtos)
+                {
+                    Console.WriteLine(item.Nome);
+                }
+            }
         }
 
         private static void GravarUsandoEntity()
@@ -25,7 +37,7 @@ namespace Alura.Loja.Testes.ConsoleApp
             p.Preco = 19.89;
 
             Produto p1 = new Produto();
-            p1.Nome = "Harry Potter e a Ordem da Fênix";
+            p1.Nome = "Harry Potter e a Pedra Filosofal";
             p1.Categoria = "Livros";
             p1.Preco = 19.89;
 
