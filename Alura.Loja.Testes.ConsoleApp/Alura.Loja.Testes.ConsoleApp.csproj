@@ -216,6 +216,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DeletandoObjetosComoEntity.cs" />
     <Compile Include="IntroduçãoEnitityFramework.cs" />
     <Compile Include="LojaContext.cs" />
     <Compile Include="PrimeiroPasso.cs" />
@@ -223,6 +224,8 @@
     <Compile Include="ProdutoDAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecuperandoObjetosComEntity.cs" />
+    <Compile Include="StringDeConexão.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
