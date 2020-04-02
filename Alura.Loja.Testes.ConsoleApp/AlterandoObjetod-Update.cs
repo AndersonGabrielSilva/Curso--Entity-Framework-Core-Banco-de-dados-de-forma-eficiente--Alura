@@ -33,8 +33,6 @@ namespace Alura.Loja.Testes.ConsoleApp
                                 
                                  private static void AtualizarProduto()
                                  {
-                                  //Atualizar o produto
-                                  //Escolher apenas 1 produto.
                      1º------------→ using (var repo = new LojaContext())
                                      {
                      2º---------------→ Produto primeiro = repo.Produtos.First();
