@@ -29,12 +29,11 @@ namespace Alura.Loja.Testes.ConsoleApp
 
             //Atualizar o produto
             //Escolher apenas 1 produto.
-            using (var repo = new LojaContext())
+            using (var repo = new ProdutoDAOEntity())
             {
-                Produto primeiro = repo.Produtos.First();
+                Produto primeiro = repo.Produtos().First();
                 primeiro.Nome = ("Anderson editou - ");
-                repo.Produtos.Update(primeiro);
-                repo.SaveChanges();
+                repo.Atualizar(primeiro);
                 Console.WriteLine("\nEstou editando....\n");
             }
             RecuperarProdutos();
@@ -43,23 +42,22 @@ namespace Alura.Loja.Testes.ConsoleApp
 
         private static void ExcluirProdutos()
         {
-            using (var repo = new LojaContext())
+            using (var repo = new ProdutoDAOEntity())
             {
-                IList<Produto> produtos = repo.Produtos.ToList();
+                IList<Produto> produtos = repo.Produtos().ToList();
                 Console.WriteLine("Foram encontrados {0} protudo(s)",produtos.Count);
                 foreach (var item in produtos)
                 {
-                     repo.Produtos.Remove(item);
-                }
-                repo.SaveChanges();
+                     repo.Remover(item);
+                }                
             }
         }
 
         private static void RecuperarProdutos()
         {
-            using (var repo = new LojaContext())
+            using (var repo = new ProdutoDAOEntity())
             {
-                IList<Produto> produtos = repo.Produtos.ToList();
+                IList<Produto> produtos = repo.Produtos();
                 foreach(var item in produtos)
                 {
                     Console.WriteLine(item.Nome);
@@ -91,15 +89,15 @@ namespace Alura.Loja.Testes.ConsoleApp
 
           
 
-            using (var contexto = new LojaContext())
+            using (var contexto = new ProdutoDAOEntity())
             {
-                //contexto.Produtos.Add(p);
-                //contexto.Produtos.Add(p1);
-                //contexto.Produtos.Add(p2);
-                //contexto.Produtos.Add(p3);
+                contexto.Adicionar(p);
+                contexto.Adicionar(p1);
+                contexto.Adicionar(p2);
+                contexto.Adicionar(p3);
                 //Ou podemos ultilizar o .AddRange
-                contexto.Produtos.AddRange(p1, p2, p3);
-                contexto.SaveChanges();
+                //contexto.Adicionar(p1, p2, p3);
+               
             }
         }
 
