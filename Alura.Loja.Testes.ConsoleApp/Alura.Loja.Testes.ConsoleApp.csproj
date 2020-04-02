@@ -216,6 +216,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlterandoObjetod-Update.cs" />
     <Compile Include="DeletandoObjetosComoEntity.cs" />
     <Compile Include="IntroduçãoEnitityFramework.cs" />
     <Compile Include="LojaContext.cs" />
