@@ -216,7 +216,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1_UtilizandoCRUD_PartialDeProgram.cs" />
+    <Compile Include="2_Entendendo_ChengeTracker.cs" />
     <Compile Include="AlterandoObjetod-Update.cs" />
+    <Compile Include="ChengeTrack_Explicando.cs" />
     <Compile Include="DeletandoObjetosComoEntity.cs" />
     <Compile Include="InterfaceProdutoDAO.cs" />
     <Compile Include="IntroduçãoEnitityFramework.cs" />
