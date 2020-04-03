@@ -218,6 +218,7 @@
   <ItemGroup>
     <Compile Include="1_UtilizandoCRUD_PartialDeProgram.cs" />
     <Compile Include="2_Entendendo_ChengeTracker.cs" />
+    <Compile Include="3_Entendento_Added.cs" />
     <Compile Include="AlterandoObjetod-Update.cs" />
     <Compile Include="ChengeTrack_Explicando.cs" />
     <Compile Include="DeletandoObjetosComoEntity.cs" />
@@ -232,6 +233,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecuperandoObjetosComEntity.cs" />
+    <Compile Include="SqlLoggerProvider.cs" />
     <Compile Include="StringDeConexão.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -11,7 +11,7 @@ namespace Alura.Loja.Testes.ConsoleApp
     {
         static void Main(string[] args)
         {
-            TestaChengeTracker()
+            TestaChengeTracker();
 
 
             Console.ReadKey();
