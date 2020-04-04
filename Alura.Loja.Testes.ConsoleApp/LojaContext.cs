@@ -13,5 +13,6 @@ namespace Alura.Loja.Testes.ConsoleApp
             optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=LojaDB;Trusted_Connection=true;");
         }
 
+     
     }
 }
