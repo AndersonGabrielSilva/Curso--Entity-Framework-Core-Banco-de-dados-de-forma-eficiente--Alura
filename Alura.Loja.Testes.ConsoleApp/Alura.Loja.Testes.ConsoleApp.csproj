@@ -223,8 +223,10 @@
     <Compile Include="1_UtilizandoCRUD_PartialDeProgram.cs" />
     <Compile Include="2_Entendendo_ChengeTracker.cs" />
     <Compile Include="3_Entendento_Added.cs" />
+    <Compile Include="5_RelacionamentoUmParaMuitos1N.cs" />
     <Compile Include="AlterandoObjetod-Update.cs" />
     <Compile Include="ChengeTrack_Explicando.cs" />
+    <Compile Include="Compra.cs" />
     <Compile Include="DeletandoObjetosComoEntity.cs" />
     <Compile Include="InterfaceProdutoDAO.cs" />
     <Compile Include="IntroduçãoEnitityFramework.cs" />
@@ -241,6 +243,18 @@
     <Compile Include="Migrations\20200404002257_Unidade2.cs" />
     <Compile Include="Migrations\20200404002257_Unidade2.designer.cs">
       <DependentUpon>20200404002257_Unidade2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20200404005030_Unidade3.cs" />
+    <Compile Include="Migrations\20200404005030_Unidade3.designer.cs">
+      <DependentUpon>20200404005030_Unidade3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20200404005604_Unidade4.cs" />
+    <Compile Include="Migrations\20200404005604_Unidade4.designer.cs">
+      <DependentUpon>20200404005604_Unidade4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20200406122105_Compra.cs" />
+    <Compile Include="Migrations\20200406122105_Compra.designer.cs">
+      <DependentUpon>20200406122105_Compra.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\LojaContextModelSnapshot.cs" />
     <Compile Include="PrimeiroPasso.cs" />

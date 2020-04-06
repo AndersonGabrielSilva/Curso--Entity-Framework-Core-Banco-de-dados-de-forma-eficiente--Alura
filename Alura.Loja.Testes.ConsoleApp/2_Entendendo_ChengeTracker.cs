@@ -43,15 +43,10 @@ namespace Alura.Loja.Testes.ConsoleApp
                 
                  //ExibeEntries(contexto.ChangeTracker.Entries());
             }
+
+
         }
 
-        private static void ExibeEntries(IEnumerable<EntityEntry> entries)
-        {
-            Console.WriteLine("=================================================");
-            foreach (var e in entries)/*A variavel "e" remete ao nome de Estado*/
-            {
-                Console.WriteLine(e.Entity.ToString() + "-" + e.State);
-            }
-        }
+       
     }
 }

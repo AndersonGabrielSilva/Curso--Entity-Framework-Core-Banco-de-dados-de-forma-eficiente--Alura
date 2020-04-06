@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace Alura.Loja.Testes.ConsoleApp
 {
@@ -13,9 +14,21 @@ namespace Alura.Loja.Testes.ConsoleApp
         {
 
             GravarUsandoEntity();
+            //Pão frances
+            RelacionamentoUmParaMuitos1N();
+
             Console.ReadKey();
         }
 
-        
+        private static void ExibeEntries(IEnumerable<EntityEntry> entries)
+        {
+            Console.WriteLine("=================================================");
+            foreach (var e in entries)/*A variavel "e" remete ao nome de Estado*/
+            {
+                Console.WriteLine(e.Entity.ToString() + "-" + e.State);
+            }
+        }
+
+
     }
 }
