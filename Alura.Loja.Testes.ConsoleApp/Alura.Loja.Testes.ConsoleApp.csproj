@@ -224,11 +224,20 @@
     <Compile Include="2_Entendendo_ChengeTracker.cs" />
     <Compile Include="3_Entendento_Added.cs" />
     <Compile Include="5_RelacionamentoUmParaMuitos1N.cs" />
+    <Compile Include="6_RelacionamentoMuitosParaMuitosNN.cs" />
+    <Compile Include="7_MetodoWHERE.cs" />
     <Compile Include="AlterandoObjetod-Update.cs" />
     <Compile Include="ChengeTrack_Explicando.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="Endereco.cs" />
+    <Compile Include="GerenciandoAulas.cs" />
     <Compile Include="Migrations\20200406141225_Promocao.cs" />
     <Compile Include="Migrations\20200406141225_Promocao.designer.cs">
       <DependentUpon>20200406141225_Promocao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20200406182337_Cliente.cs" />
+    <Compile Include="Migrations\20200406182337_Cliente.designer.cs">
+      <DependentUpon>20200406182337_Cliente.cs</DependentUpon>
     </Compile>
     <Compile Include="PromocaoProduto.cs" />
     <Compile Include="Compra.cs" />
@@ -271,6 +280,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecuperandoObjetosComEntity.cs" />
     <Compile Include="4_SincronizandoClassesComEstruturasDobanco,cs.cs" />
+    <Compile Include="RelacionamentoUmParaUm11.cs" />
     <Compile Include="RenalionamentoMuitosParaMuitos.cs" />
     <Compile Include="SqlLoggerProvider.cs" />
     <Compile Include="StringDeConexão.cs" />
